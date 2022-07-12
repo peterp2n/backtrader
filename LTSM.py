@@ -14,12 +14,6 @@ from keras.models import Sequential
 from keras.layers import Dense, LSTM
 
 
-# In[ ]:
-
-
-
-
-
 # In[8]:
 
 
@@ -176,28 +170,4 @@ X_test = np.reshape(X_test, (X_test.shape[0], X_test.shape[1],1))
 pred_price = model.predict(X_test)
 pred_proce = scaler.inverse_transform(pred_price)
 print(pred_price)
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
